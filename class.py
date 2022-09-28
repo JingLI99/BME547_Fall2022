@@ -27,4 +27,3 @@ def create_patient_entry(petient_first_name,
 
 def main():
     x = Patient
-

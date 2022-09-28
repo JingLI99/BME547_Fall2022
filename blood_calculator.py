@@ -1,7 +1,7 @@
 def interface():
     print("Blood Calculor")
     keep_runnning = True
-    while keep_runnning == True:
+    while keep_runnning is True:
         print("Options:")
         print("1 - Analyze HDL")
         print("2 - Analyze LDL")
@@ -15,7 +15,7 @@ def interface():
         elif choice == '2':
             LDL_driver()
         elif choice == '3':
-            total_driver()        
+            total_driver()
 
 
 def input_value(test_name):

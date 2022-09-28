@@ -10,6 +10,7 @@ def test_check_HDL():
     expected = 'Low'
     assert answer == expected
 
+
 def test_check_LDL():
     from blood_calculator import check_LDL
     answer = check_LDL(120)
@@ -20,10 +21,10 @@ def test_check_LDL():
     assert answer == expected
     answer = check_LDL(180)
     expected = "High"
-    assert answer == expected   
+    assert answer == expected
     answer = check_LDL(200)
     expected = "Very high"
-    assert answer == expected 
+    assert answer == expected
 
 
 def test_check_total_cholesterol():
@@ -36,7 +37,4 @@ def test_check_total_cholesterol():
     assert answer == expected
     answer = check_total_cholesterol(250)
     expected = "High"
-    assert answer == expected   
-
-
-
+    assert answer == expected
