@@ -1,11 +1,25 @@
+class Patient:
+    def __init__(self):
+        self.first_name = ""
+        self.last_name = ""
+        self.patient_id = ""
+        self.age = ""
+        self.tests = []
+    
+    def full_name(self):
+        return "{} {}".format(self.first_name, self.last_name)
+
+
 def create_patient_entry(patient_first_name,
                          patient_last_name, patient_id,
                          patient_age):
-    new_patient = {"First Name": patient_first_name,
-                   "Last Name": patient_last_name,
-                   "Id": patient_id,
-                   "Age": patient_age,
-                   "Tests": []}
+
+    new_patient = Patient()
+    new_patient.first_name = patient_first_name
+    new_patient.last_name = patient_last_name
+    new_patient.patient_id = patient_id
+    new_patient.age = patient_age
+
     return new_patient
 
 
@@ -39,6 +53,21 @@ def adult_or_minor(patient):
 
 
 def main():
+    x = Patient()
+    x.first_name = "Jing"
+    x.last_name = "LI"
+    print(x.full_name())
+    print(type(x))
+
+    y = Patient()
+    y.first_name = "Edward"
+    y.last_name = "Smith"
+    print(y.last_name)
+    exit()
+
+
+
+
     db = {}
     db[11] = create_patient_entry("Ann", "Ables", 11, 30)
     db[22] = create_patient_entry("Bob", "Boyles", 22, 34)
